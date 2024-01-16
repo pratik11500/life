@@ -35,29 +35,6 @@ const updateVisitorCount = async () => {
   ;
 updateVisitorCount();
 
-function sendMessage() {
-  var userInput = document.getElementById("userInput").value;
-  displayUserMessage(userInput);
-  handleBotResponse(userInput);
-  document.getElementById("userInput").value = ""; // Clear the input field
-}
-
-function handleBotResponse(userInput) {
-  // Basic bot response for demonstration purposes
-  var botResponse = "Hello! I am APEX, your AI assistant. How can I help you?";
-  displayBotMessage(botResponse);
-}
-
-function displayUserMessage(message) {
-  var chatbox = document.getElementById("chatbox");
-  chatbox.innerHTML += `<div class="user-message">${message}</div>`;
-}
-
-function displayBotMessage(message) {
-  var chatbox = document.getElementById("chatbox");
-  chatbox.innerHTML += `<div class="bot-message">${message}</div>`;
-}
-
 
 
 var blockContextMenu = function (e) {
